@@ -3,7 +3,7 @@ This project showcases how to add OAuth to a Node.js CRUD application using. The
 
 The project uses the [ngrok JavaScript SDK](https://github.com/ngrok/ngrok-javascript) to establish ingress, set a static domain, and integrate with Google OAuth.
 
-This sample is referenced, and more clearly explained, is post forr the [ngrok blog](https://ngrok.com/blog) called [Adding OAuth to a Node.js CRUD app](https://ngrok.com/blog-post/nodejs-crud-app-oauth-tutorial)
+This sample is referenced, and more clearly explained, in a post for the [ngrok blog](https://ngrok.com/blog) called [Adding OAuth to a Node.js CRUD app](https://ngrok.com/blog-post/nodejs-crud-app-oauth-tutorial)
 
 ## Contact Us
 If you have any questions about this sample code, the blog post, or ngrok please reach out by [creating an issue on this repo](https://github.com/ngrok-samples/javascript-crud-app/issues/new) or hit us up on X (aka Twitter) [@ngrokhq](https://twitter.com/ngrokHQ) or [LinkedIn](https://www.linkedin.com/company/ngrok/), or [join our community on Slack](https://ngrok.com/slack).
