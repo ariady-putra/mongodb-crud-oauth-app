@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "96d6bc69-df29-44fa-ba55-e9794eca07e1",
+		"name": "MongoDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6854454"
+	},
+	"item": [
+		{
+			"name": "View Vinyl Records",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:60884/api/vinyl-records",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60884",
+					"path": [
+						"api",
+						"vinyl-records"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Vinyl Records",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:60884/api/vinyl-record/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60884",
+					"path": [
+						"api",
+						"vinyl-record",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1234567890a1234567890b12",
+							"type": "string"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Vinyl Record",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"In the End\",\n    \"artist\": \"Linkin Park\",\n    \"year\": 2001,\n    \"genre\": \"Rock\",\n    \"condition\": \"Excellent\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:60884/api/vinyl-record",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60884",
+					"path": [
+						"api",
+						"vinyl-record"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Vinyl Records",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"In the End\",\n    \"artist\": \"Linkin Park\",\n    \"year\": 2001,\n    \"genre\": \"Rock\",\n    \"condition\": \"Good\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:60884/api/vinyl-record/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60884",
+					"path": [
+						"api",
+						"vinyl-record",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1234567890a1234567890b12",
+							"type": "string"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Vinyl Records",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:60884/api/vinyl-record/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60884",
+					"path": [
+						"api",
+						"vinyl-record",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1234567890a1234567890b12",
+							"type": "string"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
